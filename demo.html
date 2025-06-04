@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Digi Safe homes-Login</title>
+    <style>
+        body {
+            font-family: "Lato", sans-serif;
+            transition: background-color .5s;
+            background-color: #f0f0f0;
+        }
+
+        .login-form {
+            width: 300px;
+            margin: 0 auto;
+            margin-top: 100px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .login-form h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .login-form label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .login-form input[type="text"],
+        .login-form input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        .login-form input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .login-form input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+    
+</head>
+<body>
+  
+
+    <nav class="navbar background ">
+        <ul class="nav-list ">
+            <a href="index.html">
+                <div class="logo"><img src="image/icon.png" alt="logo" ></div>
+            </a>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+       
+    </nav>
+    <div class="login-form">
+        <h2>Login</h2>
+        <form action="login.php" method="post">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <input type="button" value="Login" onclick="validateAndLogin()">
+        </form>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <footer class="site-footer">
+      <div class="footer-links">
+          <a href=# target="_blank"  style="color:white;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 20px;">Facebook</a>
+          <a href="http://127.0.0.1:5500/index.html" target="_blank"   style="color:white;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 20px;">Google</a>
+          <a href="https://www.instagram.com/yourprofile" target="_blank"   style="color:white;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 20px;">Instagram</a>
+      </div>
+      <div class="contact-info">
+          <p style="color:white;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 20px;">Phone: +8798343666</p>
+      </div>
+      <div class="credits">
+          <h4 style="color:white;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 20px;">@copyrigtDigiSafeHomes</h4>
+          <h4 style="color:white;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 20px;">Developed by Sinhgad Institutes SVCP students</h4>
+      </div>
+  </footer>
+</body>
+</html>

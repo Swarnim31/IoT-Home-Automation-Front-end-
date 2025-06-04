@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digi safe home-fan control</title>
+    <link rel="stylesheet" href="css/style.css">
+   
+
+
+    
+    <style>
+        body {
+          font-family: "Lato", sans-serif;
+          transition: background-color .5s;
+        }
+        
+        .sidenav {
+          height: 100%;
+          width: 0;
+          position: fixed;
+          z-index: 1;
+          top: 0;
+          left: 0;
+          background-color: #111;
+          overflow-x: hidden;
+          transition: 0.5s;
+          padding-top: 60px;
+        }
+        
+        .sidenav a {
+          padding: 8px 8px 8px 32px;
+          text-decoration: none;
+          font-size: 25px;
+          color: #818181;
+          display: block;
+          transition: 0.3s;
+        }
+        
+        .sidenav a:hover {
+          color: #f1f1f1;
+        }
+        
+        .sidenav .closebtn {
+          position: absolute;
+          top: 0;
+          right: 25px;
+          font-size: 36px;
+          margin-left: 50px;
+        }
+        
+        #main {
+          transition: margin-left .5s;
+          padding: 16px;
+        }
+        
+        @media screen and (max-height: 450px) {
+          .sidenav {padding-top: 15px;}
+          .sidenav a {font-size: 18px;}
+        }
+        
+        </style>
+</head>
+<body>
+    <nav class="navbar background ">
+        <ul class="nav-list ">
+            <a href="http://127.0.0.1:5500/index.html">
+            <div class="logo"><img src="image/icon.png" alt="logo" ></div></a>
+          
+            <li><a href="index.html">Home</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            
+            <li><a href="contact.html">Contact Us</a></li>
+
+        </ul>
+        
+       
+    </nav>
+    
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="lights.html">Lights</a>
+        <a href="fan.html">Fan</a>
+        <a href="#">Curtain Control</a>
+        <a href="#">Automatic shed control</a>
+      </div>
+      
+      <div id="main">
+     
+        <span style="font-size:50px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+      </div>
+      <div class="homeControlText1">
+        <center>  <h1 style="color: white; font-size: 80px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin-top: 160px; ;">"Feel the breeze of innovation <br>with our smart fan solutions."</h1></center>
+    </div><br> <br> <br> <br><br>
+    <div class="r">
+        <img src="image/fan.png" alt="Right Image">
+    </div><br><br><br>
+
+
+    <div class="led-container">
+        <h2 class="led-heading" style="font-size: 50ppx; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: white;">Fan 1</h2>
+        <button class="led-button" id="fan1-on-button">ON</button>
+        <button class="led-button" id="fan1-off-button">OFF</button>
+      </div>
+      <br>  <br>  <br>  <br>  <br>  <br>  
+
+      
+    <div class="led-container">
+        <h2 class="led-heading" style="font-size: 50ppx; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: white;">fan 2</h2>
+        <button class="led-button" id="fan2-on-button">ON</button>
+        <button class="led-button" id="fan2-off-button">OFF</button>
+      </div><br>  <br>  <br>  <br>  <br>  <br>  
+      
+      <div class="led-container">
+        <h2 class="led-heading" style="font-size: 50ppx; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: white;">Fan 3</h2>
+        <button class="led-button" id="fan3-on-button">ON</button>
+        <button class="led-button" id="fan3-off-button">OFF</button>
+      </div>
+
+    
+
+
+      <footer class="site-footer">
+        <div class="footer-links">
+            <a href=# target="_blank"  style="color:white;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 20px;">Facebook</a>
+            <a href="http://127.0.0.1:5500/index.html" target="_blank"   style="color:white;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 20px;">Google</a>
+            <a href="https://www.instagram.com/yourprofile" target="_blank"   style="color:white;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 20px;">Instagram</a>
+        </div>
+        <div class="contact-info">
+            <p style="color:white;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 20px;">Phone: +8798343666</p>
+        </div>
+        <div class="credits">
+            <h4 style="color:white;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 20px;">@copyrigtDigiSafeHomes</h4>
+            <h4 style="color:white;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 20px;">Developed by Sinhgad Institutes SVCP students</h4>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
